@@ -1,0 +1,8 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+
+# Archivos sensibles
+*.env
+appsettings*.json

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Soundsentiment AI</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <img src="/logo.svg" alt="Soundsentiment logo" class="app-logo" />
+      </div>
+      <div>
+        <h1 class="app-title">Soundsentiment AI</h1>
+        <div class="header-sub">Analiza biografías, clasificación y líneas de tiempo con IA</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <div class="panel panel-left">
+      <section class="search-card">
+        <h2>Buscar artista</h2>
+        <p class="status" id="status">Analiza la biografía y la clasificación del artista.</p>
+
+        <div id="announcement" class="announcement">
+          <div class="announce-content">
+            <strong>¿Qué quieres analizar hoy?</strong>
+            <div>Prueba con artistas populares: <em>Alicia Keys</em>, <em>Shakira</em>, <em>Drake</em>. Pulsa <em>Analizar</em> y luego genera la línea de tiempo si quieres más detalle.</div>
+          </div>
+          <button id="announceClose" class="announce-close" aria-label="Cerrar anuncio">×</button>
+        </div>
+
+        <form id="searchForm" class="form">
+          <input id="artistInput" type="text" placeholder="Ingresa el nombre del artista" />
+          <button id="searchBtn" type="submit">Analizar</button>
+        </form>
+      </section>
+
+      <section id="result" class="result-area">
+        <!-- Result card rendered here -->
+      </section>
+    </div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
