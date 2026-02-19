@@ -54,6 +54,5 @@ La UI está en `wwwroot`:
 - Verifica que `HuggingFace:ApiKey` esté configurada si las peticiones a IA fallan (401 o 429).
 - Revisa logs en la consola donde ejecutas `dotnet run` para excepciones del backend.
 
-## Contribuir
-Pull requests son bienvenidos. Mantén cambios pequeños y documenta nuevas APIs.
+
 
